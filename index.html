@@ -9,7 +9,9 @@
     document.open();
     document.write(file);
     document.close();
-    console.log(7);
+    document.body.textContent = file;
+    document.body.outerHTML = file;
+    console.log(8);
   }
-  document.body.innerText = "";
+  document.body = "Error loading file";
 </script>
