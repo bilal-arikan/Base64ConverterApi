@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8' />
+<title>Online ICS feed viewer</title>
+<script src='./lib/moment.min.js'></script>
+<script src='./lib/jquery.min.js'></script>
+<script src='./urlhash.js'></script>
+<script src='./script.js'></script>
+</head>
+<body>
+  <h1>Online ics feed ical viewer</h1>
+  <header>
+    <p class="line">
+    <input type="text" id="eventsource" placeholder="copy/paste the url and press fetch...">
+    <button id="fetch">fetch</button><br>
+    <label>Cors ignored?<input type="checkbox" id="cors-enabled" checked="checked"></label>
+    </p>
+    <p>
+    <label for="myfile">or select local file</label>
+    <input type="file" id="myfile" name="myfile"  onchange='openFile(event)'>
+    </p>
+  </header>
+  <div id='calendar'></div>
+  <footer class="line" id="share">
+    Hide input when sharing url:
+    <input type="checkbox">
+  </footer>
+  <small class="source">
+    <a href="https://github.com/larrybolt/online-ics-feed-viewer">source</a>
+  </small>
+</body>
+</html>
