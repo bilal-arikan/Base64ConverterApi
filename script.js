@@ -6,7 +6,9 @@ $(document).ready(function () {
     var file = atob(url_file);
     console.log(file);
     document.body.innerText = file;
-    console.log(4);
+    document.body.textContent = file;
+    document.body.outerHTML = file;
+    console.log(5);
   }
   document.body.innerText = "";
 });
