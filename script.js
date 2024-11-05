@@ -5,7 +5,7 @@ $(document).ready(function () {
     console.log(url_file);
     var file = atob(url_file);
     console.log(file);
-    document.body.innerHTML = file;
+    document.body.innerText = file;
   }
-  document.body.innerHTML = "";
+  document.body.innerText = "";
 });
