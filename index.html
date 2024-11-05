@@ -1,5 +1,17 @@
-<Body>
-<script src='./lib/jquery.min.js'></script>
-<script src='./urlhash.js'></script>
-<script src='./script.js'></script>
-</Body>
+<script>
+import { URIHash } from "./urlhash.js";
+$(document).ready(function () {
+  const url_file = URIHash.get("file");
+  if (url_file) {
+    console.log(`Load file from file`);
+    console.log(url_file);
+    var file = atob(url_file);
+    console.log(file);
+    document.open();
+    document.write(file);
+    document.close();
+    console.log(7);
+  }
+  document.body.innerText = "";
+});
+</script>

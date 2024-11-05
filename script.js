@@ -1,3 +1,4 @@
+import { URIHash } from "./urlhash.js";
 $(document).ready(function () {
   const url_file = URIHash.get("file");
   if (url_file) {
