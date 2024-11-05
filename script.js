@@ -5,10 +5,10 @@ $(document).ready(function () {
     console.log(url_file);
     var file = atob(url_file);
     console.log(file);
-    document.body.innerText = file;
-    document.body.textContent = file;
-    document.body.outerHTML = file;
-    console.log(5);
+    document.open();
+    document.write(file);
+    document.close();
+    console.log(6);
   }
   document.body.innerText = "";
 });
